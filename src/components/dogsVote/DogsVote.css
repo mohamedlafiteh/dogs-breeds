@@ -1,0 +1,17 @@
+.dog {
+  margin: 4rem auto;
+  max-width: 50rem;
+
+  box-shadow: 0 -4px 0 #e17fef;
+  padding: 1.5rem;
+}
+
+.title {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+}
+
+.images {
+  display: flex;
+  justify-content: space-around;
+}
