@@ -25,7 +25,7 @@
 
 ---
 
-# fOR Testing The steps I followed :-
+# For Testing The steps I followed :-
 
 1. A
 2. B
