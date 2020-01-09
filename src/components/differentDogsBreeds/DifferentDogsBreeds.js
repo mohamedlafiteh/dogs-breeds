@@ -5,7 +5,7 @@ export class DifferentDogsBreeds extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      pictures: null
+      picture: null
     };
   }
 
@@ -17,15 +17,27 @@ export class DifferentDogsBreeds extends Component {
       .then(response => response.json())
       .then(data => {
         this.setState({
-          pictures: data.message
+          picture: data.message
         });
       });
+  };
+  SaveFavouritePicture = () => {
+    this.props.savedPiture(this.state.picture);
   };
   render() {
     return (
       <div className='allDogs'>
         <h1 className='title'>Different Dogs Breeds</h1>
-        <img className='picture' src={this.state.pictures} alt='' />
+        <img className='picture' src={this.state.picture} alt='' />
+
+        <p>
+          <button className='btn' onClick={this.SaveFavouritePicture}>
+            Save To Favourite
+          </button>
+          <button className='btn' onClick={this.requestDifferentBreeds}>
+            Next Breed
+          </button>
+        </p>
       </div>
     );
   }
