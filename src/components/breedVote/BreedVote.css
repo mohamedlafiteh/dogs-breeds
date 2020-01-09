@@ -1,0 +1,24 @@
+.image {
+  max-width: 300px;
+  height: auto;
+  border-radius: 0.5em;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 3px;
+  background: #49bae0;
+  padding: 0.5em 1em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #54cbf3;
+}
+
+.vote {
+  padding-left: 30px;
+}

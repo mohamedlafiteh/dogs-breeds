@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import DifferentDogsBreeds from "../differentDogsBreeds/DifferentDogsBreeds";
 import FavouriteDogBreed from "../favouriteDogBreed/FavouriteDogBreed";
 import BreedsSelection from "../breedsSelection/BreedsSelection";
+import DogsVote from "../dogsVote/DogsVote";
 
 import "./Main.css";
 
@@ -28,6 +29,7 @@ class Main extends React.Component {
         <DifferentDogsBreeds savedPiture={this.savedPiture} />
         <FavouriteDogBreed pictures={this.state.favourite} />
         <BreedsSelection />
+        <DogsVote />
       </div>
     );
   }
