@@ -1,6 +1,7 @@
 .allDogs {
   margin: 4rem auto;
   max-width: 30rem;
+  box-shadow: 0 -4px 0 #efd67f;
 
   padding: 1.5rem;
 }

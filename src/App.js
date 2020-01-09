@@ -1,6 +1,7 @@
 import React from "react";
 import DifferentDogsBreeds from "./components/differentDogsBreeds/DifferentDogsBreeds";
 import FavouriteDogBreed from "./components/favouriteDogBreed/FavouriteDogBreed";
+import BreedsSelection from "./components/breedsSelection/BreedsSelection";
 
 import "./App.css";
 
@@ -25,6 +26,7 @@ class App extends React.Component {
       <div className='App'>
         <DifferentDogsBreeds savedPiture={this.savedPiture} />
         <FavouriteDogBreed pictures={this.state.favourite} />
+        <BreedsSelection />
       </div>
     );
   }

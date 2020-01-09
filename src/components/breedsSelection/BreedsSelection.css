@@ -1,0 +1,19 @@
+.Breeds {
+  margin: 4rem auto;
+  max-width: 50rem;
+
+  box-shadow: 0 -4px 0 #efd67f;
+  padding: 1.5rem;
+}
+
+.title {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.image {
+  max-width: 300px;
+  height: auto;
+  border-radius: 0.5em;
+}
