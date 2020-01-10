@@ -2,8 +2,8 @@
 
 > Dogs Breed Web Application built using:
 
-| React | CSS | HTML | React-Router-Dom | Public-API |
-| ----- | --- | ---- | ---------------- | ---------- |
+| React | CSS | HTML | React-Router-Dom | Eslint |
+| ----- | --- | ---- | ---------------- | ------ |
 
 
 - The project is hosted on Github.
@@ -15,28 +15,31 @@
 
 # The steps I followed :-
 
-    1. A
-    2. B
-    3. C
-    4. D
-    5. E
-
-\*\*Because the duration
-
----
-
-# For Testing The steps I followed :-
-
-1. A
-2. B
-3. Then choose the third option  Import from Swagger or Open API 3C
+    1.Design the application
+    2.Run command create-react-app name-project in the terminal and new repository on GitHub
+    3.Create new Branch and start working on the developing the first component
+    4.Install eslint for fixing errors and use airbnb styling
+    5.Create the main component and render the Different dogs breeds component
+    6.Add css for styling the component
 
 ---
 
-    # Challenges :-
+# For the other components followed the same steps and Added the react router to the project :-
 
-- A.
+---
 
-- B.
+# Challenges :-
 
-- C.
+- Installing the eslint .
+
+- Solve Git conflict.
+
+- Resizing pictures with css.
+
+# Continue working on :-
+
+1.Add unit testing.
+2.Add more functionality for the voting.
+3.Add server and database to fetch the data from
+4.Add footer.
+5.Deploy the project on cloud platform
