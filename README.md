@@ -2,8 +2,8 @@
 
 > Dogs Breed Web Application built using:
 
-| React | CSS | HTML | React-Router-Dom | Eslint |
-| ----- | --- | ---- | ---------------- | ------ |
+| JavaScript | React | CSS | HTML | React-Router-Dom | Eslint |
+| ---------- | ----- | --- | ---- | ---------------- | ------ |
 
 
 - The project is hosted on Github.
