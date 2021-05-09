@@ -1,5 +1,4 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
 import DifferentDogsBreeds from "../differentDogsBreeds/DifferentDogsBreeds";
 import FavouriteDogBreed from "../favouriteDogBreed/FavouriteDogBreed";
 import BreedsSelection from "../breedsSelection/BreedsSelection";
