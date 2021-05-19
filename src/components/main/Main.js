@@ -10,22 +10,35 @@ class Main extends React.Component {
   constructor() {
     super();
     this.state = {
-      favourite: []
+      favourite: [],
+      err:"",
+      show:true
     };
   }
-  savedPiture = picture => {
+  savedPiture = (picture )=> {
     const newPictures = [];
-    newPictures.push(picture);
+          newPictures.push(picture);
+
     this.setState(prevState => {
-      return {
-        favourite: newPictures.concat(prevState.favourite)
-      };
-    });
-  };
+        if(prevState.favourite.includes(picture)){
+              return {
+                  err: "The dog is already added.",
+                  show: setTimeout(() => {
+                  this.setState({ show:false})
+                  }, 2000)
+                    };
+ 
+            }else {
+                return {
+                      favourite: newPictures.concat(prevState.favourite),
+                    };
+            }
+          });
+        };
   render() {
     return (
       <div className='App'>
-        <DifferentDogsBreeds savedPiture={this.savedPiture} />
+        <DifferentDogsBreeds savedPiture={this.savedPiture} err={this.state.err}  show={this.state.show}/>
         <FavouriteDogBreed pictures={this.state.favourite} />
         <BreedsSelection />
         <DogsVote />

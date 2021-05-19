@@ -20,11 +20,13 @@ export class DifferentDogsBreeds extends Component {
           picture: data.message
         });
       });
+     
   };
   SaveFavouritePicture = () => {
     this.props.savedPiture(this.state.picture);
   };
   render() {
+ 
     return (
       <div className='allDogs'>
         <h1 className='title'>Different Dogs Breeds</h1>
@@ -38,6 +40,7 @@ export class DifferentDogsBreeds extends Component {
             Next Breed
           </button>
         </p>
+        <h3>{ this.props.show ? this.props.err:""}</h3>
       </div>
     );
   }

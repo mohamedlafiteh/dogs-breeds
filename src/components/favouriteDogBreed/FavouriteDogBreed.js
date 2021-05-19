@@ -8,8 +8,8 @@ export class FavouriteDogBreed extends Component {
         <div className='saved'>
           <h2 className='title'>Favourite Dog Breed</h2>
           <div className='photos'>
-            {this.props.pictures.map(pic => {
-              return <img alt='' src={pic} />;
+            {this.props.pictures.map((pic,index) => {
+              return <img key={index} alt='' src={pic} />;
             })}
           </div>
         </div>

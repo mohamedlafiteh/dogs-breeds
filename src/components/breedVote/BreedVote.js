@@ -7,7 +7,8 @@ export class BreedVote extends Component {
     this.state = {
       img: null,
       vote: 0,
-      pictureVote: null
+      pictureVote: null,
+      show:true,
     };
   }
   getPicture() {
@@ -24,9 +25,19 @@ export class BreedVote extends Component {
   }
   increment = () => {
     this.setState(current => {
-      return {
-        vote: current.vote + 1
-      };
+      if(this.state.vote >=1) {
+          return {
+                  err: "You can only give one vote.",
+                  show: setTimeout(() => {
+                  this.setState({ show:false})
+                  }, 2000)
+                    };
+           }else {
+                return {
+                vote: this.state.vote + 1
+              };
+      }
+      
     });
   };
 
@@ -40,6 +51,7 @@ export class BreedVote extends Component {
     return (
       <div className='Dog'>
         <img alt='' className='image' src={this.state.img} />
+        <h3>{this.state.show ? this.state.err:""}</h3>
         <p className='vote'>
           Votes: {this.state.vote}
           <button className='btn' onClick={this.increment}>
